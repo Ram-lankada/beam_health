@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
     <link rel="stylesheet" type="text/css" href="{% static 'css/login_global.css' %}">
-    <link rel="stylesheet" type="text/css" href="{% static 'css/index1.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/login1.css' %}">
   
     <link rel="stylesheet" type="text/css" href="{% static 'css/login.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/global.css' %}">
@@ -56,7 +56,7 @@
             </div>
           </div> -->
 
-          <form id="loginForm">
+          <form id="loginForm" action="{% url 'home' %}">
 
             <div class="animate-label input1 bar-width" style="width: 370px;">
                 
@@ -74,29 +74,30 @@
                 </label>
                 <line></line>
             </div>
-
-          </form>
-
-          <div class="checkboxlabel-parent">
-            <div class="checkboxlabel">
-              <div class="terms">Remember me</div>
-              <div class="checkbox">
-                <div class="rectangle"></div>
-                <img
-                  class="new-shape-icon"
-                  alt=""
-                  src="../static/public/new-shape.svg"
-                />
+            
+            <div class="checkboxlabel-parent" style="margin: 15px 0 0 0;">
+              <div class="checkboxlabel">
+                <div class="terms">Remember me</div>
+                <div class="checkbox">
+                  <!-- <div class="rectangle"></div>
+                  <img
+                    class="new-shape-icon"
+                    alt=""
+                    src="../static/public/new-shape.svg"
+                  /> -->
+                    <input class="new-shape-icon" type="checkbox" class="check" style="margin: auto;height: 15px;width: 15px;">
+                </div>
               </div>
+              <div class="forgot-password">Forgot Password?</div>
             </div>
-            <div class="forgot-password">Forgot Password?</div>
-          </div>
 
-          <form action="{% url 'home' %}"  target="_blank">
-            <button class="custom-btn btn-3-tan long ">
-              <span>Login</span>
-            </button>
-          </form>
+              <button type="submit" class="custom-btn btn-3-tan long ">
+                <span>Login</span>
+              </button>
+
+            </form>
+
+
 
         </div>
         <div class="btn-outlinevertical">
