@@ -30,7 +30,7 @@ $(document).ready(function () {
         outputCard.removeClass('blur');
   
         console.log('Blur removed from output card.'); // Debug message 6
-      }, 3000);
+      }, 50);
 
     });
   });

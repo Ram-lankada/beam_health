@@ -226,6 +226,7 @@
                 </div>
             </div>
             <div class="rectangle-parent">
+
                 <div class="group-child"></div>
                 <div class="div10">
                     <div class="upload-frequency-vs">
@@ -248,41 +249,45 @@
                         </div>
                     </div>
                 </div>
-                <div class="button4">
-                    <button class="predict custom-btn btn-3 " id = 'predict-button'>
-                        <span>Predict</span>
-                    </button>
-                    <!-- <input type="button" class="custom-btn btn-3" value="Predict"> -->
-                <!-- <div class="button-child1"></div> -->
-                    <!-- <div class="predict">Predict</div> -->
-                </div>
-                <div class="field">
-                    <input type="text" id="username" class="lable-parent" placeholder="Frequency 1" required/>
-                </div>
 
-                <div class="field1">
-                    <div class="lable-parent">
-                        <input type="text" id="username" class="lable-parent" placeholder="Frequency 2" required/>
+                <form method="post">
+                    {% csrf_token %}
+                    <div class="button4">
+                        <button class="predict custom-btn btn-3 " id = 'predict-button'>
+                            <span>Predict</span>
+                        </button>
                     </div>
-                </div>
-                <div class="field2">
-                    <div class="lable-parent">
-                        <input type="text" id="username" class="lable-parent" placeholder="Frequency 3" required/>
 
+                    <div class="field">
+                        <input type="text" name="frequency_1" id="username" class="lable-parent" placeholder="Frequency 1" required/>
                     </div>
-                </div>
-                <div class="field3">
-                    <div class="lable-parent">
-                        <input type="text" id="username" class="lable-parent" placeholder="Stress value" required/>
+
+                    <div class="field1">
+                        <div class="lable-parent">
+                            <input type="text" name="frequency_2" id="username" class="lable-parent" placeholder="Frequency 2" required/>
+                        </div>
                     </div>
-                </div>
+                    <div class="field2">
+                        <div class="lable-parent">
+                            <input type="text" name="frequency_3" id="username" class="lable-parent" placeholder="Frequency 3" required/>
+
+                        </div>
+                    </div>
+                    <div class="field3">
+                        <div class="lable-parent">
+                            <input type="text" name="stress_value" id="username" class="lable-parent" placeholder="Stress value" required/>
+                        </div>
+                    </div>
+                </form>
+
             </div>
 
+            
             <div class="loader">
               <div class="spinner"></div>
             </div>
             
-            <div class="rectangle-group blur">
+            <div class="rectangle-group">
 
                 <!-- <div class="group-child"></div>
                 <div class="group-inner"></div>
@@ -361,7 +366,7 @@
                     <div class="action-child9"></div>
                     <div class="depth6">CRACK LOCALIZATION</div>
                 </div>
-                <div class="crack-detected">Crack Detected !</div>
+                <div class="crack-detected {{prediction_class}}">{{prediction}}</div>
                 <div class="subs1">
                     <div class="subs-item"></div>
                     <div class="action3">
@@ -376,8 +381,8 @@
                         <div class="length">Depth</div>
                     </div>
                 </div>
-                <div class="cm">{{length}}cm</div>
-                <div class="cm1">{{depth}}cm</div>
+                <div class="cm">{{length}} cm</div>
+                <div class="cm1">{{depth}} cm</div>
                 <div class="group-child2"></div>
                 <div class="action14">
                     <div class="action-child12"></div>
@@ -390,7 +395,7 @@
                         <div class="length">Stress</div>
                     </div>
                 </div>
-                <div class="div12">{{sif}}</div>
+                <div class="div12 {{prediction_class}}">{{sif}}</div>
                 <div class="subs4">
                     <div class="subs-item"></div>
                     <div class="action3">
@@ -398,7 +403,7 @@
                         <div class="length">Severity</div>
                     </div>
                 </div>
-                <div class="high-severity">{{severe}}</div>
+                <div class="high-severity {{prediction_class}}">{{severe}}</div>
                 <div class="group-child3"></div>
                 <div class="action17">
                     <div class="action-child15"></div>
@@ -412,7 +417,7 @@
                     </div>
                 </div>
                 <div class="days-7-hours-container">
-                  <p class="navigation">{{life}}</p>
+                  <p class="navigation {{prediction_class}} life">{{life}} days</p>
                 </div>
 
             </div>

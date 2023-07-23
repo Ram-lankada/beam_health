@@ -1,5 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
+
+.red-text {
+  color: red;
+}
+
+.green-text {
+  color: greenyellow ; 
+}
+
+.life{
+  position: absolute;
+  top: 22px;
+}
+
+.f1{
+  position: absolute;
+  top: 55vh;
+  left: 5vw;
+}
+
+.f2{
+  position: absolute;
+  top: 22vh;
+  left: 2vw;
+}
+
+.f3{
+  position: absolute;
+  top: 22vh;
+  left: 3vw;
+}
+
+.str{
+  position: absolute;
+  top: 22vh;
+  left: 2vw;
+}
+
 .section-4-child {
   position: absolute;
   top: 0;
@@ -883,7 +921,7 @@
   font-size: var(--font-size-11xl);
   line-height: 24px;
   font-weight: 600;
-  color: var(--color-red-200);
+  /* color: var(--color-red-200); */
   display: inline-block;
   width: 295px;
   height: 30px;
@@ -993,7 +1031,7 @@
 }
 .high-severity {
   position: absolute;
-  top: 477px;
+  top: 465px;
   left: 459px;
   font-size: var(--text-16-size);
   line-height: 24px;
