@@ -6,7 +6,7 @@ https://github.com/Ram-lankada/beam_health/assets/91232198/b7d3e843-0bb2-4eaf-a7
 ## Note 
 This repository is a comprehensive work & implementation of the Research paper named "DEVELOPMENT OF A MACHINE LEARNING ALGORITHM
 BASED ON RANDOM FOREST MODEL FOR LOCALIZATION OF CRACK IN THE COMPOSITE BEAMS" published at the 2 day National Conference on Conditional Monitoring(NCCM) under Conditional Monitoring Society of India(CMSI) at Naval Science & Technological Laboratory(NSTL). 
-[NCCM-NSTL-RFA sub (1).pdf](https://github.com/Ram-lankada/beam_health/files/12196483/NCCM-NSTL-RFA.sub.1.pdf)
+Research paper : [NCCM-NSTL-RFA sub (1).pdf](https://github.com/Ram-lankada/beam_health/files/12196483/NCCM-NSTL-RFA.sub.1.pdf)
 
 
 ## Beam health application architecture 
